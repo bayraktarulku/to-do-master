@@ -26,7 +26,8 @@ app = new Vue({
     'data': {
         'description': '',
         'todos': [],
-        'trash': []
+        'trash': [],
+        'selected': 'HOME'
     },
     'created': function () {
         this.trash = JSON.parse(localStorage.getItem('todo'))
@@ -46,6 +47,12 @@ app = new Vue({
         }
     },
     'methods': {
+        'home_onclick': function () {
+          this.selected = 'HOME';
+        },
+        'trash_onclick': function () {
+          this.selected = 'TRASH';
+        },
         'add_todo': function () {
             if(this.description) {
                 this.todos.push({'description': this.description, 'checked': false});
