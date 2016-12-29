@@ -1,0 +1,33 @@
+#task-list li.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/*form {
+   position: fixed;
+   display: block;
+   right: 0;
+   bottom: 0;
+   margin: 0px 166px 0px 0px;
+   margin-bottom: 40px;
+   z-index: 900;
+   width: calc(100% - 422px);
+}*/
+
+#new-task {
+    padding: 16px;
+    width:  calc(100% - 20px);
+}
+#new-task-text {
+    font-size: 24px;
+
+}
+#add-button {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
